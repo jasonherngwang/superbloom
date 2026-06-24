@@ -1,0 +1,25 @@
+return {
+  _nc = "#111a14",
+  base = "#142018",
+  surface = "#1b2a20",
+  overlay = "#26382b",
+  muted = "#81917d",
+  subtle = "#adbaa6",
+  text = "#e5eadf",
+
+  poppy = "#e69a4f",
+  gold = "#efc6a4",
+  lupine = "#b6a6d5",
+  sky = "#8fbfdc",
+  sage = "#92ad8b",
+  cream = "#e6d8c8",
+  clarkia = "#e09aaa",
+  paintbrush = "#c96f8d",
+  phacelia = "#7fbf9e",
+  sea = "#9ac6a6",
+  brodiaea = "#88a9e6",
+
+  highlight_low = "#1d2d22",
+  highlight_med = "#314839",
+  highlight_high = "#4b6253",
+}
