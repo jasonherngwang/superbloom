@@ -4,7 +4,7 @@
 
 <p align="center">Green Neovim colorscheme inspired by the California superbloom</p>
 
-![superbloom](superbloom.png)
+![superbloom](superbloom.jpg)
 
 ## LazyVim
 
