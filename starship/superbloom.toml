@@ -1,0 +1,62 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Superbloom — Starship prompt theme (minimal)
+# Companion to the superbloom.nvim colorscheme and the Ghostty theme.
+# Requires a Nerd Font for the branch/read-only glyphs.
+#
+# Install:
+#   cp extras/starship/superbloom.toml ~/.config/starship.toml
+# (or copy the [palettes.superbloom] block and module styles into your config).
+#
+# Foreground colors only — no pill backgrounds. Full path, git branch, and an
+# inline poppy prompt character (paintbrush on a failed command) that echoes the
+# Ghostty cursor. Blank line between prompts for breathing room.
+
+format = """
+$directory\
+$git_branch\
+$character\
+"""
+
+add_newline = true
+palette = "superbloom"
+
+# Full palette (mirrors lua/superbloom/palette.lua) so you can restyle any
+# module with a flower name; the minimal prompt below uses only a few.
+[palettes.superbloom]
+base = '#142018'
+surface = '#1b2a20'
+overlay = '#26382b'
+muted = '#81917d'
+subtle = '#adbaa6'
+text = '#e5eadf'
+poppy = '#e69a4f'
+gold = '#e2c583'
+cream = '#e6d8c8'
+sage = '#92ad8b'
+sea = '#9ac6a6'
+phacelia = '#7fbf9e'
+sky = '#8fbfdc'
+brodiaea = '#88a9e6'
+lupine = '#b6a6d5'
+clarkia = '#e09aaa'
+paintbrush = '#c96f8d'
+
+[directory]
+style = "bold fg:sky"
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 0
+truncate_to_repo = false
+read_only = " 󰌾"
+read_only_style = "fg:paintbrush"
+
+[git_branch]
+style = "fg:phacelia"
+format = "[$symbol$branch]($style) "
+symbol = " "
+
+[character]
+format = "$symbol "
+success_symbol = "[❯](bold fg:poppy)"
+error_symbol = "[❯](bold fg:paintbrush)"
+vimcmd_symbol = "[❮](bold fg:sage)"

@@ -8,7 +8,7 @@ return {
   text = "#e5eadf",
 
   poppy = "#e69a4f",
-  gold = "#efc6a4",
+  gold = "#e2c583",
   lupine = "#b6a6d5",
   sky = "#8fbfdc",
   sage = "#92ad8b",
