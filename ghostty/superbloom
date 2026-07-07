@@ -1,23 +1,11 @@
-# Superbloom — Ghostty theme
-# A green terminal theme inspired by the California superbloom.
-# Companion to the superbloom.nvim colorscheme.
-#
-# Install:
-#   cp extras/ghostty/superbloom ~/.config/ghostty/themes/superbloom
-# Then in ~/.config/ghostty/config:
-#   theme = superbloom
+# Superbloom — Ghostty theme. Companion to the superbloom.nvim colorscheme.
+# Install: cp ghostty/superbloom ~/.config/ghostty/themes/superbloom
+# Then set `theme = superbloom` in ~/.config/ghostty/config
 
-# The 16 ANSI colors are a categorical scale — they want distinct hues, not the
-# analogous green harmony the nvim syntax theme uses. The one real adjustment:
-# cyan comes from sky (the palette's bluest color) instead of a third green, so
-# green (ls executables) and cyan (ls symlinks) stay clearly distinct. Brights
-# repeat blue/cyan to keep the cool end uncrowded. phacelia, the nvim keyword
-# teal, sits the terminal out.
-#
-# Scope: this file only styles ANSI output — ls, plain `git diff`, TUIs, and
-# ANSI-based shell prompts. Syntax highlighting in bat/delta/nvim renders from a
-# separate 24-bit theme, not these 16 colors, so code keeps the softer nvim
-# palette regardless of what is set here.
+# ANSI colors want distinct hues, not the nvim theme's analogous green harmony —
+# cyan comes from sky instead of a third green so ls's green/cyan stay distinct.
+# Only styles ANSI output (ls, plain git diff, TUIs); bat/delta/nvim use a
+# separate 24-bit theme.
 
 # Normal
 palette = 0=#26382b
@@ -42,9 +30,7 @@ palette = 15=#e5eadf
 background = #142018
 foreground = #e5eadf
 
-# Poppy cursor — the palette's signature warm accent, always on screen. A bare
-# terminal rarely prints ANSI yellow, so without this the theme reads as pure
-# green; the cursor is the one always-visible surface that can carry the warmth.
+# Poppy cursor keeps the theme's warm accent always on screen.
 cursor-color = #e69a4f
 cursor-text = #142018
 

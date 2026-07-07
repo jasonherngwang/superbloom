@@ -1,28 +1,22 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Superbloom — Starship prompt theme (minimal)
-# Companion to the superbloom.nvim colorscheme and the Ghostty theme.
-# Requires a Nerd Font for the branch/read-only glyphs.
-#
-# Install:
-#   cp extras/starship/superbloom.toml ~/.config/starship.toml
-# (or copy the [palettes.superbloom] block and module styles into your config).
-#
-# Foreground colors only — no pill backgrounds. Full path, git branch, and an
-# inline poppy prompt character (paintbrush on a failed command) that echoes the
-# Ghostty cursor. Blank line between prompts for breathing room.
+# Superbloom — Starship prompt theme (minimal). Requires a Nerd Font.
+# Install: cp starship/superbloom.toml ~/.config/starship.toml
+# (or copy just [palettes.superbloom] into your config to recolor it)
 
 format = """
 $directory\
 $git_branch\
+$git_state\
+$git_status\
+$python\
+$cmd_duration\
 $character\
 """
 
 add_newline = true
 palette = "superbloom"
 
-# Full palette (mirrors lua/superbloom/palette.lua) so you can restyle any
-# module with a flower name; the minimal prompt below uses only a few.
 [palettes.superbloom]
 base = '#142018'
 surface = '#1b2a20'
@@ -54,6 +48,41 @@ read_only_style = "fg:paintbrush"
 style = "fg:phacelia"
 format = "[$symbol$branch]($style) "
 symbol = " "
+
+[git_state]
+style = "fg:paintbrush"
+format = '[\($state( $progress_current/$progress_total)\)]($style) '
+
+# Single dirty-tree indicator, not a per-status breakdown — lazygit is for
+# "what changed". modified/staged/renamed/deleted/untracked render as a
+# zero-width space, so the literal "*" they wrap only appears when one of
+# them is true (borrowed from starship's pure-preset).
+[git_status]
+style = "fg:gold"
+format = '([$conflicted]($style)[(*$untracked$modified$staged$renamed$deleted)]($style)[$ahead_behind]($style) )'
+conflicted = "!"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = ""
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+
+# Venv name only, no interpreter version — detection by project files is
+# disabled so this only shows when a venv is actually active.
+[python]
+style = "fg:lupine"
+format = '[(\($virtualenv\))]($style) '
+detect_extensions = []
+detect_files = []
+detect_folders = []
+
+[cmd_duration]
+style = "fg:muted"
+format = "[$duration]($style) "
 
 [character]
 format = "$symbol "

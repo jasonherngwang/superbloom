@@ -2,7 +2,7 @@
     <h2 align="center">superbloom</h2>
 </p>
 
-<p align="center">Dark green colorscheme inspired by the California wildflowers</p>
+<p align="center">Dark green colorscheme inspired by California wildflowers</p>
 
 ![superbloom](superbloom.jpg)
 
@@ -100,7 +100,7 @@ Then reference the flower names in your module styles, e.g. `style = "fg:phaceli
 
 ### The full prompt
 
-To also use the minimal prompt (full path, git branch, and `❯`), copy the whole file. This replaces your prompt layout, and needs a [Nerd Font](https://www.nerdfonts.com) for the branch and read-only glyphs:
+To also use the minimal prompt (path, git status, active Python venv, and `❯`), copy the whole file. This replaces your prompt layout, and needs a [Nerd Font](https://www.nerdfonts.com):
 
 ```sh
 cp starship/superbloom.toml ~/.config/starship.toml
