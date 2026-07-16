@@ -18,21 +18,20 @@ add_newline = true
 palette = "superbloom"
 
 [palettes.superbloom]
-base = '#142018'
-surface = '#1b2a20'
-overlay = '#26382b'
+base = '#121d16'
+surface = '#1a281e'
+overlay = '#253628'
 muted = '#81917d'
-subtle = '#adbaa6'
+subtle = '#aba7b6'
 text = '#e5eadf'
-poppy = '#e69a4f'
+poppy = '#e6814f'
 gold = '#e2c583'
 cream = '#e6d8c8'
-sage = '#92ad8b'
+sage = '#9ab992'
 sea = '#9ac6a6'
-phacelia = '#7fbf9e'
 sky = '#8fbfdc'
 brodiaea = '#88a9e6'
-lupine = '#b6a6d5'
+lupine = '#a68fd1'
 clarkia = '#e09aaa'
 paintbrush = '#c96f8d'
 
@@ -45,7 +44,7 @@ read_only = " 󰌾"
 read_only_style = "fg:paintbrush"
 
 [git_branch]
-style = "fg:phacelia"
+style = "fg:sage"
 format = "[$symbol$branch]($style) "
 symbol = " "
 

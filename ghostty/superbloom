@@ -8,14 +8,14 @@
 # separate 24-bit theme.
 
 # Normal
-palette = 0=#26382b
+palette = 0=#253628
 palette = 1=#c96f8d
-palette = 2=#92ad8b
-palette = 3=#e69a4f
+palette = 2=#9ab992
+palette = 3=#e6814f
 palette = 4=#88a9e6
-palette = 5=#b6a6d5
+palette = 5=#a68fd1
 palette = 6=#8fbfdc
-palette = 7=#adbaa6
+palette = 7=#aba7b6
 
 # Bright
 palette = 8=#81917d
@@ -27,12 +27,12 @@ palette = 13=#cabfe3
 palette = 14=#8fbfdc
 palette = 15=#e5eadf
 
-background = #142018
+background = #121d16
 foreground = #e5eadf
 
 # Poppy cursor keeps the theme's warm accent always on screen.
-cursor-color = #e69a4f
-cursor-text = #142018
+cursor-color = #e6814f
+cursor-text = #121d16
 
 selection-background = #314839
 selection-foreground = #e5eadf

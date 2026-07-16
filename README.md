@@ -88,7 +88,6 @@ gold = '#e2c583'
 cream = '#e6d8c8'
 sage = '#92ad8b'
 sea = '#9ac6a6'
-phacelia = '#7fbf9e'
 sky = '#8fbfdc'
 brodiaea = '#88a9e6'
 lupine = '#b6a6d5'
@@ -96,7 +95,7 @@ clarkia = '#e09aaa'
 paintbrush = '#c96f8d'
 ```
 
-Then reference the flower names in your module styles, e.g. `style = "fg:phacelia"`.
+Then reference the flower names in your module styles, e.g. `style = "fg:sage"`.
 
 ### The full prompt
 

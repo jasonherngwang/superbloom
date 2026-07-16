@@ -16,7 +16,7 @@ return {
     a = { fg = p.base, bg = p.paintbrush, gui = "bold" },
   },
   command = {
-    a = { fg = p.base, bg = p.phacelia, gui = "bold" },
+    a = { fg = p.base, bg = p.gold, gui = "bold" },
   },
   inactive = {
     a = { fg = p.muted, bg = p.surface },
