@@ -21,4 +21,9 @@ return {
   highlight_low = "#1b2a20",
   highlight_med = "#314839",
   highlight_high = "#4b6253",
+
+  diff_add = "#1c3524",
+  diff_change = "#282343",
+  diff_delete = "#331a22",
+  diff_text = "#3a3162",
 }

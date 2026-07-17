@@ -117,10 +117,11 @@ local function groups()
     DiagnosticSignHint = { fg = p.lupine },
     DiagnosticSignOk = { fg = p.sage },
 
-    DiffAdd = { fg = p.sage, bg = p.highlight_low },
-    DiffChange = { fg = p.poppy, bg = p.highlight_low },
-    DiffDelete = { fg = p.paintbrush, bg = p.highlight_low },
-    DiffText = { fg = p.poppy, bg = p.highlight_med },
+    -- Background washes only; foreground left to syntax so code stays readable.
+    DiffAdd = { bg = p.diff_add },
+    DiffChange = { bg = p.diff_change },
+    DiffDelete = { bg = p.diff_delete },
+    DiffText = { bg = p.diff_text },
     Added = { fg = p.sage },
     Changed = { fg = p.poppy },
     Removed = { fg = p.paintbrush },
